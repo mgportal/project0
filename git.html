@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Web Programming with Python and JavaScript</title>
+        <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet"
+              integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="project0.css">
+    </head>
+    <body>
+      <div class="container">
+        <div class="row">
+          <div class="col">
+            <p id="title">Web Programming with Python and JavaScript.</p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-2">
+            <p><a href="index.html"><img src="images/home.png" alt="Home"></a></p>
+            <br>
+            <p><a href="git.html"><img src="images/git.png" alt="Git"></a></p>
+            <br>
+            <p><a href="html.html"><img src="images/html5.png" alt="HTML"></a></p>
+            <br>
+            <p><a href="css.html"><img src="images/css3.png" alt="CSS"></a></p>
+            <br>
+            <p><a href="python.html"><img src="images/python.png" alt="Python"></a></p>
+            <br>
+            <p><a href="sql.html"><img src="images/sql.png" alt="SQL"></a></p>
+            <br>
+            <p><a href="js.html"><img src="images/js.png" alt="JavaScript"></a></p>
+          </div>
+          <div class="col-10">
+            <h3>Git.</h3>
+            <p>
+              Git is a Version Control Tool.<br>
+              The most important characteristics of git are:
+              <ol>
+                <li>Keep track of changes to code.</li>
+                <li>Sycronize code between different people.</li>
+                <li>Test changes without affecting the original.</li>
+                <li>Revert back to previous versions of code.</li>
+              </ol>
+              <a href="https://git-scm.com/docs" target="_blank">Git reference.</a>
+            </p>
+            <h3>GitHub.</h3>
+            <p>
+              GitHub is a web site that stores git repositories.<br>
+              Each repository is identified by an URL.
+            </p>
+            <h3>GitHub Pages.</h3>
+            <p>
+              GitHub publish repositories on the web so that can be accessed and tested from anywhere.<br>
+            </p>
+            <h3>Git basic commands.</h3>
+            <ul>
+              <li>git clone url. Download a copy of the repository locally.</li>
+              <li>git add file. Marks a local file to be included in the next commit. It is sent to the staging area.</li>
+              <li>git commit -m "message". Snapshot of the local repository including new changes. Files must be added previouly.</li>
+              <li>git status. Shows the working tree status.</li>
+              <li>git push. Uploads local repository to GitHub.</li>
+              <li>git pull. Downloads changes from GitHub to local repository.</li>
+              <li>git log. Shows a list of all commits. Each commit is identified by a hash string.</li>
+              <li>git reset --hard hash-string. Reverts repository to the specified commit.</li>
+              <li>git reset --hard origin/master. Reverts repository to GitHub original version.</li>
+              <li>git reflog. Manages reference log information.</li>
+              </ul>
+            <h3>Branching.</h3>
+            <ul>
+              <li>git branch. Lists branches.</li>
+              <li>git branch mybranch. Creates a branch called mybranch.</li>
+              <li>git checkout mybranch. Changes current branch.</li>
+              <li>git commit -am "message". Adds all changed files and commits.</li>
+              <li>git merge mybranch. From master brach, merges branch master with mybranch.</li>
+              <li>git push --set-upstream origin mybranch. Uploads to GitHub including mybranch.</li>
+            </ul>
+            <h3>Remotes.</h3>
+            <ul>
+              <li>git fetch. Download commits from GitHub when local repository is behind remote.</li>
+              <li>git merge origin/master. Points HEAD to last changes.</li>
+              <li>git pull. Combines git fetch and git merge origin/master.</li>
+            </ul>
+            <h3>Forks and Pull Requests.</h3>
+            <p>A Fork is a copy of a repository completely separate from the original.<br>
+               A Pull Request allows you tell others about your changes.</p>
+            <h3>Software requirements.</h3>
+            <ul>
+              <li>Create an account on <span class="link-1"><a href="https://github.com/" target="_blank">GitHub.</a></span></li>
+              <li>Download and install <span class="link-1"><a href="https://git-scm.com/" target="_blank">Git.</a></span></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </body>
+</html>

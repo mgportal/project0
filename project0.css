@@ -1,0 +1,61 @@
+body {
+  overflow: scroll;
+  font-family: "Courier"; }
+
+.col {
+  font-weight: bold;
+  text-align: center; }
+
+.col, .col-2, .col-10 {
+  border-style: solid;
+  border-width: 2px;
+  border-collapse: collapse;
+  border-color: white;
+  border-radius: 10px;
+  background-color: #80bfff;
+  padding: 10px; }
+
+.col-2 {
+  width: auto;
+  text-align: center; }
+
+.col-10 a:hover {
+  color: red; }
+
+.col-10 a {
+  color: white; }
+
+img {
+  width: 50%;
+  height: 50%;
+  object-fit: contain; }
+
+td {
+  padding: 5px;
+  vertical-align: top; }
+
+th {
+  text-align: center; }
+
+.link-1 {
+  background-color: orange; }
+  .link-1 a {
+    color: blue; }
+
+@media (min-width: 900px) {
+  .col {
+    font-size: 30px; } }
+@media (max-width: 899px) {
+  .col {
+    font-size: 20px; } }
+.container {
+  grid-template-columns: 200px auto; }
+
+.command {
+  color: #cc0099;
+  font-weight: bold; }
+
+h3 {
+  font-weight: bold; }
+
+/*# sourceMappingURL=project0.css.map */

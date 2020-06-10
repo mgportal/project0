@@ -1,0 +1,76 @@
+$bg-color: #80bfff;
+$big-font: 30px;
+$small-font: 20px;
+body {
+  overflow: scroll;
+  font-family: "Courier";
+}
+%title {
+  font-weight: bold;
+  text-align: center;
+}
+%all {
+  border-style: solid;
+  border-width: 2px;
+  border-collapse: collapse;
+  border-color: white;
+  border-radius: 10px;
+  background-color: $bg-color;
+  padding: 10px;
+}
+.col {
+  @extend %title;
+  @extend %all;
+}
+.col-2 {
+  @extend %all;
+  width: auto;
+  text-align: center;
+}
+.col-10 {
+  @extend %all;
+}
+.col-10 a:hover {
+  color: red;
+}
+.col-10 a {
+  color: white;
+}
+img {
+  width: 50%;
+  height: 50%;
+  object-fit: contain;
+}
+td {
+  padding: 5px;
+  vertical-align: top;
+}
+th {
+  text-align: center;
+}
+.link-1 {
+  background-color: orange;
+  a {
+    color: blue;
+  }
+}
+@media (min-width: 900px) {
+    .col {
+        font-size: $big-font;
+    }
+}
+@media (max-width: 899px) {
+    .col {
+        font-size: $small-font;
+    }
+}
+.container {
+  grid-template-columns: 200px auto;
+}
+.command {
+  color: #cc0099;
+  font-weight: bold;
+}
+h3  {
+  font-weight: bold;
+}

@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Web Programming with Python and JavaScript</title>
+        <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet"
+              integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="project0.css">
+    </head>
+    <body>
+      <div class="container">
+        <div class="row">
+          <div class="col">
+            <p id="title">Web Programming with Python and JavaScript.</p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-2">
+            <p><a href="index.html"><img src="images/home.png" alt="Home"></a></p>
+            <br>
+            <p><a href="git.html"><img src="images/git.png" alt="Git"></a></p>
+            <br>
+            <p><a href="html.html"><img src="images/html5.png" alt="HTML"></a></p>
+            <br>
+            <p><a href="css.html"><img src="images/css3.png" alt="CSS"></a></p>
+            <br>
+            <p><a href="python.html"><img src="images/python.png" alt="Python"></a></p>
+            <br>
+            <p><a href="sql.html"><img src="images/sql.png" alt="SQL"></a></p>
+            <br>
+            <p><a href="js.html"><img src="images/js.png" alt="JavaScript"></a></p>
+          </div>
+          <div class="col-10">
+            <h3>CSS.</h3>
+            <p>
+              CSS stands for Cascade Style Sheets.<br>
+            </p>
+            <h3>Applying CSS.</h3>
+            <ul>
+              <li>Attribute style.
+                <pre>
+&lt;h1 style="color:blue;text-align:center;"&gt;Heading&lt;/h1&gt;</pre></li>
+              <li>STYLE tag in HEAD section.
+                <pre>&lt;style&gt;
+    h1 {
+      color: blue;
+      text-align: center;
+    }
+&lt;/style&gt;</pre></li>
+                <li>CSS file (.css). LINK tag in HEAD section.
+                <pre>&lt;link rel="stylesheet" href="styles.css"&gt;</pre></li>
+            </ul>
+            <h3>CSS Properties.</h3>
+            <p>
+              <a href="https://www.tutorialrepublic.com/css-reference/css3-properties.php" target="_blank">CSS Properties.</a>
+              <br>
+              <a href="https://www.w3schools.com/colors/colors_picker.asp" target="_blank">W3schools HTML Color Picker.</a>
+            </p>
+            <h3>CSS selectors.</h3>
+            <p>
+              <table>
+                <tr>
+                  <td>#name</td>
+                  <td>Identifies &lt;TAG id="name"&gt;</td>
+                </tr>
+                <tr>
+                  <td>.name</td>
+                  <td>Identifies &lt;TAG class="name"&gt;</td>
+                </tr>
+                <tr>
+                  <td>a, b</td>
+                  <td>Multiple element selector</td>
+                </tr>
+                <tr>
+                  <td>a b</td>
+                  <td>Descendant selector. Format when inside, at whatever level</td>
+                </tr>
+                <tr>
+                  <td>a > b</td>
+                  <td>Child selector. Format when direct child</td>
+                </tr>
+                <tr>
+                  <td>a + b</td>
+                  <td>Abjacent Sibling selector</td>
+                </tr>
+                <tr>
+                  <td>[a=b]</td>
+                  <td>Attribute selector. (input[type=text])</td>
+                </tr>
+                <tr>
+                  <td>a:b</td>
+                  <td>Pseudoclass selector. (button:hover)</td>
+                </tr>
+                <tr>
+                  <td>a::b</td>
+                  <td>Pseudo element selector. (a::before, a::after, p::selection)</td>
+                </tr>
+              </table>
+            </p>
+            <h3>Responsive Design.</h3>
+            <p>
+              Viewport is an HTML5 feature that refers to user's visible area of a web page.<br>
+              We need to include this line in all your pages:
+            </p>
+            <pre>&lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;</pre>
+            <p>
+              CSS @media rule is used in media queries to apply different styles for different media types/devices.
+            </p>
+            <p>
+              Flexbox is a CSS module that defines a CSS box model optimized for user interface design.
+            </p>
+            <p>
+              The CSS Grid Layout Module offers a grid-based layout system, with rows and columns, making it easier to design web pages without having to use floats and positioning.
+            </p>
+            <p>
+              Bootstrap is a framework for responsive design. It is based in Flexbox.<br>
+              To use it we just need to copy-paste link from <span class="link-1"><a href="https://getbootstrap.com/docs/4.4/getting-started/introduction/" target="_blank">bootstrap site.</a></span>
+            </p>
+            <p>
+              <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/Media_Queries/Using_media_queries" target="_blank">MDN: Using Media Queries.</a>
+              <br>
+              <a href="https://www.w3schools.com/css/css_rwd_viewport.asp" target="_blank">W3schools: Viewport.</a>
+              <br>
+              <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Flexible_Box_Layout" target="_blank">MDN: Flexbox.</a>
+              <br>
+              <a href="https://css-tricks.com/snippets/css/a-guide-to-flexbox/#flexbox-background" target="_blank">A Complete guide to Flexbox.</a>
+              <br>
+              <a href="https://developer.mozilla.org/es/docs/Web/CSS/CSS_Grid_Layout" target="_blank">MDN: CSS Grid Layout.</a>
+              <br>
+              <a href="https://css-tricks.com/snippets/css/complete-guide-grid/" target="_blank">A complete guide to Grid.</a>
+              <br>
+              <a href="https://getbootstrap.com/" target="_blank">Bootstrap home page.</a>
+            </p>
+            <h3>Sass.</h3>
+            <p>
+              Sass is a stylesheet language that’s compiled to CSS. Sass helps keep large stylesheets well-organized and makes it easy to share design within and across projects.<br>
+              Sass characteristics include use of variables, nesting and inheritance.<br>
+              GitHub Pages compiles .scss files for us.<br>
+              Command to compile Sass files: <span class="command">$sass file.scss file.css</span><br>
+              Command to watch changes and compile: <span class="command">$sass --watch file.scss:file.css</span>
+            </p>
+            <p>
+              <a href="https://sass-lang.com/" target="_blank">Sass Homepage.</a>
+            </p>
+          </div>
+        </div>
+      </div>
+    </body>
+</html>
